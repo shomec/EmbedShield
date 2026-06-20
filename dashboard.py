@@ -25,25 +25,28 @@ st.markdown("""
     html, body, [class*="css"] {
         font-family: 'Inter', sans-serif;
     }
+    .stApp {
+        background-color: #f8fafc;
+        color: #0f172a;
+    }
     
     /* Metrics Row Cards */
     .metric-card {
-        background: linear-gradient(135deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.8) 100%);
-        backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+        border: 1px solid #e2e8f0;
         border-radius: 12px;
         padding: 18px;
         text-align: center;
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
         transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
     .metric-card:hover {
         transform: translateY(-2px);
-        box-shadow: 0 12px 40px 0 rgba(99, 102, 241, 0.15);
+        box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.1), 0 4px 6px -4px rgba(99, 102, 241, 0.1);
         border: 1px solid rgba(99, 102, 241, 0.3);
     }
     .metric-title {
-        color: #94a3b8;
+        color: #475569;
         font-size: 0.75rem;
         font-weight: 600;
         text-transform: uppercase;
@@ -53,9 +56,7 @@ st.markdown("""
     .metric-value {
         font-size: 2rem;
         font-weight: 700;
-        background: linear-gradient(90deg, #f8fafc 0%, #cbd5e1 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: #0f172a;
     }
     .metric-sub {
         font-size: 0.8rem;
@@ -75,25 +76,25 @@ st.markdown("""
         border-style: solid;
     }
     .badge-pass {
-        background-color: rgba(16, 185, 129, 0.15);
-        color: #10b981;
+        background-color: rgba(16, 185, 129, 0.1);
+        color: #065f46;
         border-color: rgba(16, 185, 129, 0.3);
     }
     .badge-block {
-        background-color: rgba(239, 68, 68, 0.15);
-        color: #ef4444;
+        background-color: rgba(239, 68, 68, 0.1);
+        color: #991b1b;
         border-color: rgba(239, 68, 68, 0.3);
     }
     
     /* Header Card */
     .header-card {
-        background: linear-gradient(90deg, rgba(30, 41, 59, 0.8) 0%, rgba(17, 24, 39, 0.9) 100%);
+        background: linear-gradient(90deg, #e0e7ff 0%, #f1f5f9 100%);
         backdrop-filter: blur(15px);
-        border-bottom: 2px solid rgba(99, 102, 241, 0.2);
+        border-bottom: 2px solid #6366f1;
         padding: 24px;
         border-radius: 16px;
         margin-bottom: 20px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
     }
     
     /* Threat Table */
@@ -103,30 +104,32 @@ st.markdown("""
         margin-top: 10px;
     }
     .threat-table th {
-        background-color: rgba(30, 41, 59, 0.6);
-        color: #94a3b8;
+        background-color: #f1f5f9;
+        color: #475569;
         font-weight: 600;
         font-size: 0.75rem;
         text-transform: uppercase;
         padding: 10px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        border-bottom: 1px solid #e2e8f0;
         text-align: left;
     }
     .threat-table td {
         padding: 12px 10px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        border-bottom: 1px solid #e2e8f0;
         font-size: 0.8rem;
+        color: #334155;
     }
     
     /* Live Log Card */
     .log-card {
-        background-color: rgba(15, 23, 42, 0.6);
-        border: 1px solid rgba(255, 255, 255, 0.05);
+        background-color: #ffffff;
+        border: 1px solid #e2e8f0;
         border-radius: 8px;
         padding: 12px;
         margin-bottom: 10px;
         font-family: monospace;
         font-size: 0.75rem;
+        color: #334155;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -162,13 +165,13 @@ st.markdown("""
 <div class="header-card">
     <div style="display: flex; align-items: center; justify-content: space-between;">
         <div>
-            <h1 style="color: #f8fafc; margin: 0; font-size: 2.2rem; font-weight: 700; letter-spacing: -0.02em;">🛡️ EmbedShield</h1>
-            <p style="color: #94a3b8; margin: 4px 0 0 0; font-size: 0.95rem; font-weight: 400;">
+            <h1 style="color: #1e1b4b; margin: 0; font-size: 2.2rem; font-weight: 700; letter-spacing: -0.02em;">🛡️ EmbedShield</h1>
+            <p style="color: #475569; margin: 4px 0 0 0; font-size: 0.95rem; font-weight: 400;">
                 Unsupervised Semantic Density & Shannon Entropy Guardrail Gateway for Agentic LLM Inputs
             </p>
         </div>
         <div style="text-align: right;">
-            <span style="color: #6366f1; font-weight: 600; font-size: 0.85rem; padding: 6px 12px; border-radius: 20px; background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.2);">
+            <span style="color: #4f46e5; font-weight: 600; font-size: 0.85rem; padding: 6px 12px; border-radius: 20px; background: #e0e7ff; border: 1px solid #c7d2fe;">
                 Running on Intel CPU
             </span>
         </div>
@@ -282,39 +285,39 @@ with cols[0]:
     <div class="metric-card">
         <div class="metric-title">Total API Scans</div>
         <div class="metric-value">{total_scanned}</div>
-        <div class="metric-sub" style="color: #94a3b8;">Active Session Logs</div>
+        <div class="metric-sub" style="color: #475569;">Active Session Logs</div>
     </div>
     """, unsafe_allow_html=True)
 with cols[1]:
     st.markdown(f"""
     <div class="metric-card">
         <div class="metric-title">Passed to LLM</div>
-        <div class="metric-value" style="color: #10b981;">{passed_cnt}</div>
-        <div class="metric-sub" style="color: #10b981;">✅ Safe Inliers</div>
+        <div class="metric-value" style="color: #059669;">{passed_cnt}</div>
+        <div class="metric-sub" style="color: #059669;">✅ Safe Inliers</div>
     </div>
     """, unsafe_allow_html=True)
 with cols[2]:
     st.markdown(f"""
     <div class="metric-card">
         <div class="metric-title">Blocked Semantic</div>
-        <div class="metric-value" style="color: #ef4444;">{blocked_semantic}</div>
-        <div class="metric-sub" style="color: #ef4444;">❌ Off-Topic Outliers</div>
+        <div class="metric-value" style="color: #dc2626;">{blocked_semantic}</div>
+        <div class="metric-sub" style="color: #dc2626;">❌ Off-Topic Outliers</div>
     </div>
     """, unsafe_allow_html=True)
 with cols[3]:
     st.markdown(f"""
     <div class="metric-card">
         <div class="metric-title">Blocked Entropy</div>
-        <div class="metric-value" style="color: #eab308;">{blocked_entropy}</div>
-        <div class="metric-sub" style="color: #eab308;">⚠️ Structured/Chaos</div>
+        <div class="metric-value" style="color: #d97706;">{blocked_entropy}</div>
+        <div class="metric-sub" style="color: #d97706;">⚠️ Structured/Chaos</div>
     </div>
     """, unsafe_allow_html=True)
 with cols[4]:
     st.markdown(f"""
     <div class="metric-card">
         <div class="metric-title">Block Rate</div>
-        <div class="metric-value" style="color: #ec4899;">{block_rate:.1f}%</div>
-        <div class="metric-sub" style="color: #ec4899;">🛡️ Mitigated Risk</div>
+        <div class="metric-value" style="color: #db2777;">{block_rate:.1f}%</div>
+        <div class="metric-sub" style="color: #db2777;">🛡️ Mitigated Risk</div>
     </div>
     """, unsafe_allow_html=True)
 
@@ -372,9 +375,9 @@ with col_left:
     
     # Custom color palette for categories
     category_colors = {
-        "Customer Support": "#34d399",  # Mint Green
-        "Technical & Coding": "#60a5fa", # Soft Blue
-        "General & Greetings": "#c084fc" # Lavender
+        "Customer Support": "#059669",  # Emerald Green
+        "Technical & Coding": "#2563eb", # Royal Blue
+        "General & Greetings": "#7c3aed" # Deep Purple
     }
     
     # 1. Add Safe Dataset traces
@@ -387,7 +390,7 @@ with col_left:
                 size=10,
                 color=category_colors.get(category, "#94a3b8"),
                 opacity=0.6,
-                line=dict(width=1, color="rgba(255,255,255,0.2)")
+                line=dict(width=1, color="rgba(0,0,0,0.1)")
             ),
             name=f"Safe: {category}",
             text=df_cat["prompt"].apply(lambda t: t[:40] + ("..." if len(t) > 40 else "")),
@@ -408,9 +411,9 @@ with col_left:
                 mode="markers",
                 marker=dict(
                     size=12,
-                    color="#10b981", # Emerald
+                    color="#059669", # Emerald Green
                     symbol="circle",
-                    line=dict(width=2, color="#ffffff")
+                    line=dict(width=2, color="#0f172a")
                 ),
                 name="Passed Prompts (Inliers)",
                 text=passed_hist["prompt"].apply(lambda t: f"<b>PASS</b><br>{t[:50]}..."),
@@ -426,9 +429,9 @@ with col_left:
                 mode="markers",
                 marker=dict(
                     size=14,
-                    color="#ef4444", # Red
+                    color="#dc2626", # Red
                     symbol="x",
-                    line=dict(width=2, color="#ef4444")
+                    line=dict(width=2, color="#dc2626")
                 ),
                 name="Semantic Outliers (Off-Topic)",
                 text=sem_outliers["prompt"].apply(lambda t: f"<b>BLOCK: Semantic</b><br>{t[:50]}..."),
@@ -444,9 +447,9 @@ with col_left:
                 mode="markers",
                 marker=dict(
                     size=14,
-                    color="#f59e0b", # Orange/Yellow
+                    color="#d97706", # Amber
                     symbol="triangle-up",
-                    line=dict(width=2, color="#ffffff")
+                    line=dict(width=2, color="#0f172a")
                 ),
                 name="Entropy Danger Zone",
                 text=entropy_outliers["prompt"].apply(lambda t: f"<b>BLOCK: Entropy Anomaly</b><br>{t[:50]}..."),
@@ -461,31 +464,32 @@ with col_left:
             mode="markers+text",
             marker=dict(
                 size=22,
-                color="#ffffff",
+                color="#4f46e5", # Indigo
                 symbol="star",
-                line=dict(width=2, color="#6366f1")
+                line=dict(width=2, color="#0f172a")
             ),
             name="🔴 LATEST INGESTION",
             text=["LATEST"],
             textposition="top center",
-            textfont=dict(color="#ffffff", size=10, family="Inter"),
+            textfont=dict(color="#0f172a", size=10, family="Inter"),
             hoverinfo="none"
         ))
 
     # Layout styling for the Graph
     fig.update_layout(
-        template="plotly_dark",
-        plot_bgcolor="rgba(15, 23, 42, 0.5)",
-        paper_bgcolor="rgba(15, 23, 42, 0.5)",
+        template="plotly",
+        plot_bgcolor="#ffffff",
+        paper_bgcolor="#ffffff",
         margin=dict(l=20, r=20, t=20, b=20),
-        xaxis=dict(showgrid=True, gridcolor="rgba(255,255,255,0.05)", zeroline=False),
-        yaxis=dict(showgrid=True, gridcolor="rgba(255,255,255,0.05)", zeroline=False),
+        xaxis=dict(showgrid=True, gridcolor="rgba(0,0,0,0.05)", zeroline=False, tickfont=dict(color="#475569")),
+        yaxis=dict(showgrid=True, gridcolor="rgba(0,0,0,0.05)", zeroline=False, tickfont=dict(color="#475569")),
         legend=dict(
             orientation="h",
             yanchor="bottom",
             y=1.02,
             xanchor="right",
-            x=1
+            x=1,
+            font=dict(color="#475569")
         ),
         height=520
     )
@@ -502,36 +506,36 @@ with col_right:
         badge_style = "badge-pass" if latest["status"] == "PASS" else "badge-block"
         
         st.markdown(f"""
-        <div style="background: rgba(30, 41, 59, 0.45); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 18px; box-shadow: 0 4px 20px rgba(0,0,0,0.15);">
+        <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
-                <span style="font-weight: 600; color: #94a3b8; font-size: 0.8rem; text-transform: uppercase;">Engine Decision</span>
+                <span style="font-weight: 600; color: #475569; font-size: 0.8rem; text-transform: uppercase;">Engine Decision</span>
                 <span class="badge {badge_style}">{latest["status"]}</span>
             </div>
             <div style="margin-bottom: 12px;">
-                <span style="font-weight: 500; font-size: 0.85rem; color: #64748b;">Prompt Content:</span>
-                <p style="font-size: 0.9rem; color: #f8fafc; font-style: italic; margin-top: 4px; line-height: 1.4; max-height: 100px; overflow-y: auto;">
+                <span style="font-weight: 600; font-size: 0.85rem; color: #475569;">Prompt Content:</span>
+                <p style="font-size: 0.9rem; color: #0f172a; font-style: italic; margin-top: 4px; line-height: 1.4; max-height: 100px; overflow-y: auto;">
                     "{latest["prompt"]}"
                 </p>
             </div>
-            <div style="display: flex; gap: 20px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 12px; margin-top: 12px;">
+            <div style="display: flex; gap: 20px; border-top: 1px solid #e2e8f0; padding-top: 12px; margin-top: 12px;">
                 <div>
-                    <span style="display: block; font-size: 0.75rem; color: #64748b; text-transform: uppercase;">Entropy (H)</span>
-                    <span style="font-size: 1.1rem; font-weight: 700; color: #38bdf8;">{latest["entropy"]:.3f}</span>
+                    <span style="display: block; font-size: 0.75rem; color: #475569; text-transform: uppercase;">Entropy (H)</span>
+                    <span style="font-size: 1.1rem; font-weight: 700; color: #0284c7;">{latest["entropy"]:.3f}</span>
                 </div>
                 <div>
-                    <span style="display: block; font-size: 0.75rem; color: #64748b; text-transform: uppercase;">Semantic Outlier</span>
-                    <span style="font-size: 1.1rem; font-weight: 700; color: {'#ef4444' if latest['is_semantic_outlier'] else '#10b981'};">
+                    <span style="display: block; font-size: 0.75rem; color: #475569; text-transform: uppercase;">Semantic Outlier</span>
+                    <span style="font-size: 1.1rem; font-weight: 700; color: {'#dc2626' if latest['is_semantic_outlier'] else '#059669'};">
                         {str(latest['is_semantic_outlier'])}
                     </span>
                 </div>
                 <div>
-                    <span style="display: block; font-size: 0.75rem; color: #64748b; text-transform: uppercase;">2D Projection</span>
-                    <span style="font-size: 1.1rem; font-weight: 700; color: #c084fc;">({latest['x']:.2f}, {latest['y']:.2f})</span>
+                    <span style="display: block; font-size: 0.75rem; color: #475569; text-transform: uppercase;">2D Projection</span>
+                    <span style="font-size: 1.1rem; font-weight: 700; color: #7c3aed;">({latest['x']:.2f}, {latest['y']:.2f})</span>
                 </div>
             </div>
-            <div style="margin-top: 15px; background: rgba(0, 0, 0, 0.2); border-radius: 6px; padding: 10px; border-left: 3px solid {'#10b981' if latest['status'] == 'PASS' else '#ef4444'};">
-                <span style="font-weight: 600; font-size: 0.75rem; color: #94a3b8; display: block; text-transform: uppercase; margin-bottom: 2px;">Diagnostics Log:</span>
-                <span style="font-size: 0.85rem; color: #cbd5e1; font-family: monospace;">{latest["reason"]}</span>
+            <div style="margin-top: 15px; background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 6px; padding: 10px; border-left: 4px solid {'#059669' if latest['status'] == 'PASS' else '#dc2626'};">
+                <span style="font-weight: 600; font-size: 0.75rem; color: #475569; display: block; text-transform: uppercase; margin-bottom: 2px;">Diagnostics Log:</span>
+                <span style="font-size: 0.85rem; color: #0f172a; font-family: monospace;">{latest["reason"]}</span>
             </div>
         </div>
         """, unsafe_allow_html=True)
@@ -555,21 +559,21 @@ with col_right:
             <tr>
                 <td><b>"How do I reset my password?"</b></td>
                 <td>Inside Safe Cluster</td>
-                <td><span style="color: #38bdf8;">4.1 (Normal)</span></td>
+                <td><span style="color: #0284c7; font-weight: 600;">4.1 (Normal)</span></td>
                 <td><span class="badge badge-pass">✅ Pass</span></td>
                 <td>Standard, highly predictable character frequency of natural English prose.</td>
             </tr>
             <tr>
                 <td><b>"A A A A A A A A A A A A A A"</b></td>
                 <td>Edge of Safe Cluster</td>
-                <td><span style="color: #f59e0b;">0.0 (Ultra-Low)</span></td>
+                <td><span style="color: #d97706; font-weight: 600;">0.0 (Ultra-Low)</span></td>
                 <td><span class="badge badge-block">❌ Block</span></td>
                 <td>Zero randomness. Repetitive tokens, typical of context-window overloading attacks.</td>
             </tr>
             <tr>
                 <td><b>"U2VjdXJpdHkgYnJlYWNoIHRlc3Q..."</b> (Base64)</td>
                 <td>Mapped near Safe Zone</td>
-                <td><span style="color: #ef4444;">5.9 (Ultra-High)</span></td>
+                <td><span style="color: #dc2626; font-weight: 600;">5.9 (Ultra-High)</span></td>
                 <td><span class="badge badge-block">❌ Block</span></td>
                 <td>High character variety. Model embedding was confused, but Entropy caught the chaos.</td>
             </tr>
@@ -588,14 +592,14 @@ if len(st.session_state.history) > 0:
         st.rerun()
         
     for index, h in enumerate(st.session_state.history):
-        badge_color = "#10b981" if h["status"] == "PASS" else "#ef4444"
+        badge_color = "#059669" if h["status"] == "PASS" else "#dc2626"
         st.markdown(f"""
         <div class="log-card">
             <span style="color: {badge_color}; font-weight: bold;">[{h["status"]}]</span> 
             <b>Entropy:</b> {h["entropy"]:.3f} | 
             <b>Semantic Outlier:</b> {str(h["is_semantic_outlier"])} | 
             <b>Coordinates:</b> ({h["x"]:.3f}, {h["y"]:.3f}) <br>
-            <span style="color: #64748b;">Prompt:</span> <span style="color: #94a3b8;">"{h["prompt"]}"</span> <br>
-            <span style="color: #64748b;">Reason:</span> <span style="color: #cbd5e1; font-style: italic;">{h["reason"]}</span>
+            <span style="color: #475569; font-weight: 600;">Prompt:</span> <span style="color: #0f172a;">"{h["prompt"]}"</span> <br>
+            <span style="color: #475569; font-weight: 600;">Reason:</span> <span style="color: #334155; font-style: italic;">{h["reason"]}</span>
         </div>
         """, unsafe_allow_html=True)
