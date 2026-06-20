@@ -1,0 +1,182 @@
+[
+  {
+    "prompt": "How do I reset my account password?",
+    "category": "Customer Support"
+  },
+  {
+    "prompt": "Can you check the status of my order #12938?",
+    "category": "Customer Support"
+  },
+  {
+    "prompt": "What is your refund and return policy?",
+    "category": "Customer Support"
+  },
+  {
+    "prompt": "How long does shipping take for standard delivery?",
+    "category": "Customer Support"
+  },
+  {
+    "prompt": "Can I change my shipping address after placing an order?",
+    "category": "Customer Support"
+  },
+  {
+    "prompt": "I was charged twice for my subscription, how can I get a refund?",
+    "category": "Customer Support"
+  },
+  {
+    "prompt": "How do I contact customer support via phone or email?",
+    "category": "Customer Support"
+  },
+  {
+    "prompt": "Where can I find my monthly invoice or billing receipt?",
+    "category": "Customer Support"
+  },
+  {
+    "prompt": "Can I cancel my membership before the next billing cycle?",
+    "category": "Customer Support"
+  },
+  {
+    "prompt": "My package arrived damaged, what should I do to get a replacement?",
+    "category": "Customer Support"
+  },
+  {
+    "prompt": "Do you offer international shipping to Europe and Asia?",
+    "category": "Customer Support"
+  },
+  {
+    "prompt": "How do I upgrade my plan to the enterprise tier?",
+    "category": "Customer Support"
+  },
+  {
+    "prompt": "Is there a free trial available for new users to test the platform?",
+    "category": "Customer Support"
+  },
+  {
+    "prompt": "I forgot my username, how can I retrieve it securely?",
+    "category": "Customer Support"
+  },
+  {
+    "prompt": "How do I update my credit card information on file?",
+    "category": "Customer Support"
+  },
+  {
+    "prompt": "How do I write a binary search algorithm in Python?",
+    "category": "Technical & Coding"
+  },
+  {
+    "prompt": "What is the difference between a list and a tuple in Python?",
+    "category": "Technical & Coding"
+  },
+  {
+    "prompt": "How do I align items vertically and horizontally using CSS flexbox?",
+    "category": "Technical & Coding"
+  },
+  {
+    "prompt": "Explain the difference between synchronous and asynchronous execution.",
+    "category": "Technical & Coding"
+  },
+  {
+    "prompt": "How do I catch exceptions and handle errors in JavaScript?",
+    "category": "Technical & Coding"
+  },
+  {
+    "prompt": "Write a simple SQL query to select all users older than 21 years old.",
+    "category": "Technical & Coding"
+  },
+  {
+    "prompt": "What is a git merge conflict and how do I resolve it properly?",
+    "category": "Technical & Coding"
+  },
+  {
+    "prompt": "How does recursion work in programming and what is the base case?",
+    "category": "Technical & Coding"
+  },
+  {
+    "prompt": "Explain how async and await work in modern JavaScript applications.",
+    "category": "Technical & Coding"
+  },
+  {
+    "prompt": "What is the average time complexity of sorting an array using quicksort?",
+    "category": "Technical & Coding"
+  },
+  {
+    "prompt": "How do I establish a secure connection to a PostgreSQL database in Node.js?",
+    "category": "Technical & Coding"
+  },
+  {
+    "prompt": "What does the self keyword do inside Python class methods?",
+    "category": "Technical & Coding"
+  },
+  {
+    "prompt": "How do I read a large text file line by line in Python?",
+    "category": "Technical & Coding"
+  },
+  {
+    "prompt": "What is JSON and how is it used for communication in REST APIs?",
+    "category": "Technical & Coding"
+  },
+  {
+    "prompt": "How to create a simple Docker container for a Python web application?",
+    "category": "Technical & Coding"
+  },
+  {
+    "prompt": "Hello! How can you help me today?",
+    "category": "General & Greetings"
+  },
+  {
+    "prompt": "Good morning, hope you are having a wonderful day.",
+    "category": "General & Greetings"
+  },
+  {
+    "prompt": "Hi there, I have a few questions for you.",
+    "category": "General & Greetings"
+  },
+  {
+    "prompt": "Can you assist me with some daily tasks and organization?",
+    "category": "General & Greetings"
+  },
+  {
+    "prompt": "Hey! What are some things you are capable of doing for me?",
+    "category": "General & Greetings"
+  },
+  {
+    "prompt": "Good afternoon, let's start our discussion.",
+    "category": "General & Greetings"
+  },
+  {
+    "prompt": "Greetings, I need some help with my school work and projects.",
+    "category": "General & Greetings"
+  },
+  {
+    "prompt": "Hi, hope you are doing well and having a great week.",
+    "category": "General & Greetings"
+  },
+  {
+    "prompt": "Hello assistant, are you ready to help me write this email?",
+    "category": "General & Greetings"
+  },
+  {
+    "prompt": "Could you answer a couple of general questions for me?",
+    "category": "General & Greetings"
+  },
+  {
+    "prompt": "Hey, let's chat about some interesting science topics.",
+    "category": "General & Greetings"
+  },
+  {
+    "prompt": "Good evening, let's get started with our session.",
+    "category": "General & Greetings"
+  },
+  {
+    "prompt": "Hi, can you explain what you do in simple terms?",
+    "category": "General & Greetings"
+  },
+  {
+    "prompt": "Greetings! Let's do some problem solving together.",
+    "category": "General & Greetings"
+  },
+  {
+    "prompt": "Hello, I would like to get some assistance today.",
+    "category": "General & Greetings"
+  }
+]

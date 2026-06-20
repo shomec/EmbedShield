@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  embedshield:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: embedshield-app
+    ports:
+      - "8000:8000"  # FastAPI Gateway Port
+      - "8501:8501"  # Streamlit Dashboard Port
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'      # Cap at 2 CPU cores to protect host MacBook resources
+          memory: 2G       # Cap memory at 2GB (ample for PyTorch CPU MiniLM model)
+        reservations:
+          memory: 512M     # Request initial 512MB memory reservation
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 15s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
