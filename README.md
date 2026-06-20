@@ -139,7 +139,9 @@ The FastAPI gateway can be queried by external agentic pipelines or chat applica
 }
 ```
 ---
-## 📡 Dashboard Sample View
+## 📡 Dashboard Demo
+
+Live interactive demo: https://embedshield.onrender.com/
 
 <img width="1992" height="958" alt="Screenshot 2026-06-19 at 6 28 39 PM" src="https://github.com/user-attachments/assets/82d999f5-d612-4053-9b9d-b942dc18cd52" />
 
