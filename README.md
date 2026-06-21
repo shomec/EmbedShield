@@ -1,6 +1,6 @@
 # 🛡️ EmbedShield — LLM Input Semantic Guardrail
 
-EmbedShield is a lightweight, local security gateway for LLM and agentic applications. It filters user prompts before they reach expensive LLMs, instantly blocking prompt injections, repetitive token spam (DDoS/context window overflow), off-topic requests, and obfuscated payloads (like Base64-encoded instructions).
+EmbedShield is a lightweight security gateway for LLM and agentic applications. It filters user prompts before they reach expensive LLMs, instantly blocking prompt injections, repetitive token spam (DDoS/context window overflow), off-topic requests, and obfuscated payloads (like Base64-encoded instructions).
 
 It accomplishes this locally on resource-constrained hardware using **unsupervised density clustering (LOF/DBSCAN)** and **structural character randomness (Shannon Entropy)**, requiring no external API calls.
 
