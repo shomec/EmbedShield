@@ -141,7 +141,7 @@ The FastAPI gateway can be queried by external agentic pipelines or chat applica
 ---
 ## 📡 Dashboard Demo
 
-Live interactive demo here: https://embedshield-118680568866.us-west1.run.app/
+Live interactive demo here: https://tinyurl.com/357h3xn7
 
 Sample View:
 
