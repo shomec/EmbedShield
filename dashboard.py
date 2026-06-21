@@ -170,11 +170,6 @@ st.markdown("""
                 Unsupervised Semantic Density & Shannon Entropy Guardrail Gateway for Agentic LLM Inputs
             </p>
         </div>
-        <div style="text-align: right;">
-            <span style="color: #4f46e5; font-weight: 600; font-size: 0.85rem; padding: 6px 12px; border-radius: 20px; background: #e0e7ff; border: 1px solid #c7d2fe;">
-                Running on Intel CPU
-            </span>
-        </div>
     </div>
 </div>
 """, unsafe_allow_html=True)
@@ -187,7 +182,7 @@ if "history" not in st.session_state:
 api_available, health_data = call_api_health()
 
 if not api_available:
-    st.warning("⚠️ API Gateway at `http://localhost:8000` is currently unreachable. Make sure the Docker container or local FastAPI backend is running.")
+    st.warning("⚠️ API Gateway is currently unreachable. Make sure the backend is running.")
     st.stop()
 
 # Load safe training dataset
